@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.Collections.Immutable;
+using System.Data;
 
 namespace Practice1
 {
@@ -21,8 +22,26 @@ namespace Practice1
 
             int num4 = 5;
             ChangeValue2(num4);
-            
-        }
+
+            PrintMessage(DayTime.Morning);
+            Console.WriteLine(DayTime.Evening);
+
+            dynamic num5;
+
+            num5 = 10;
+            Console.WriteLine(num5);
+
+            num5 = "I'am dynamic , I can change my data type:]";
+
+            Console.WriteLine(num5);
+
+            var something = 15;
+            var something1 = "string";
+
+            Console.WriteLine(something.GetType());
+            Console.WriteLine(something1.GetType());
+
+        }  
 
         static int ChangeValue(ref int value)
         {
@@ -40,6 +59,61 @@ namespace Practice1
             Console.WriteLine(value);
         }
 
-        
+        static void PrintMessage(DayTime dayTime)
+        {
+            switch (dayTime)
+            {
+                case DayTime.Morning:
+                    Console.WriteLine("Good morning!");
+                    break;
+                case DayTime.Afternoon:
+                    Console.WriteLine("Good afternoon!");
+                    break;
+                case DayTime.Evening:
+                    Console.WriteLine("Good evening!");
+                    break;
+                case DayTime.Night:
+                    Console.WriteLine("Good night!");
+                    break;
+            }
+        }
+        enum DayTime
+        {
+            Morning,
+            Afternoon,
+            Evening,
+            Night
+        }
+
+        static public int Sum(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+        static public int Sum(int num1, int num2, int num3)
+        {
+            return num1 + num2 + num3;
+        }
+        static public int Sum(int num1, int num2, int num3, int num4)
+        {
+            return num1 + num2 + num3 + num4;
+        }
+        static public void Sum()
+        {
+            Console.WriteLine("Hello eho");
+        }
+
+        static public double Sum(double num1, double num2)
+        {
+            return num1 + num2;
+        }
+        static public double Sum(double num1, double num2, double num3)
+        {
+            return num1 + num2 + num3;
+        }
+        static public double Sum(double num1, double num2, double num3, double num4)
+        {
+            return num1 + num2 + num3 + num4;
+        }
+
     }
 }
