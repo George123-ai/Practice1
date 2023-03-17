@@ -9,8 +9,8 @@ namespace DeliveryProj
     internal class Airplane : ITransport
     {
         public string ShipTime { get; set; } = "1-9 days";
-        public int MaxWeight { get; set; } = 1500;
         public int MinWeight { get; set; } = 1000;
+        public int MaxWeight { get; set; } = 3000;
         public string[] CountryRestriction { get; set; } = {};
     }
 }

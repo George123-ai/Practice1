@@ -9,8 +9,8 @@ namespace DeliveryProj
     internal class Ship : ITransport
     {
         public string ShipTime { get; set; } = "1 month";
-        public int MaxWeight { get; set; } = 4000;
         public int MinWeight { get; set; } = 1000;
-        public string[] CountryRestriction { get; set; } = { "Russia","Eauropean countries" };
+        public int MaxWeight { get; set; } = 4000;
+        public string[] CountryRestriction { get; set; } = { "russia","germany", "france" };
     }
 }
