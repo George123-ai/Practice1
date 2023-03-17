@@ -16,6 +16,6 @@ namespace DeliveryProj
 
         public string[] CountryRestriction { get; set; }
 
-        
+        int ShippingCost { get; set; }
     }
 }

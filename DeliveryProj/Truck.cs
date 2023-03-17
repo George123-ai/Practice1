@@ -12,5 +12,6 @@ namespace DeliveryProj
         public int MinWeight { get; set; } = 100;
         public int MaxWeight { get; set; } = 1000;
         public string[] CountryRestriction { get; set; } = { "usa", "england", "australia" };
+        public int ShippingCost { get; set; } = 1000;
     }
 }
