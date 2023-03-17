@@ -42,18 +42,18 @@ namespace DeliveryProj
                 if (orderWeight >= truck.MinWeight && orderWeight <= truck.MaxWeight)
                     Console.Write("Order can be shipped by: truck, ");
                 if (orderWeight >= ship.MinWeight && orderWeight <= ship.MaxWeight)
-                    Console.Write(" airplane. \n");
+                    Console.Write(" ship. \n");
             }
-            //for (int i = 0; i < ship.CountryRestriction.Length; i++)
-            //{
-            //    if (orderCountry.ToLower() == ship.CountryRestriction[i].ToLower())
-            //    {
-            //        if (orderWeight >= truck.MinWeight && orderWeight <= truck.MaxWeight)
-            //            Console.Write("Order can be shipped by: truck, ");
-            //        if (orderWeight >= airplane.MinWeight && orderWeight <= airplane.MaxWeight)
-            //            Console.Write(" airplane\n");
-            //    }
-            //}
+            else
+            {
+                if (orderWeight >= truck.MinWeight && orderWeight <= truck.MaxWeight)
+                    Console.Write("Order can be shipped by: truck, ");
+                if (orderWeight >= airplane.MinWeight && orderWeight <= airplane.MaxWeight)
+                    Console.Write(" airplane, ");
+                if (orderWeight >= ship.MinWeight && orderWeight <= ship.MaxWeight)
+                    Console.Write(" ship. \n");
+
+            }
 
 
         }
