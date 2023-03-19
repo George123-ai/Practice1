@@ -7,9 +7,22 @@
         static void Main(string[] args)
         {
             ExchangeMonitoring exchangeMonitoring = new ExchangeMonitoring();
-            exchangeMonitoring.PriceChangeHandler = ShowPrice;
+            //exchangeMonitoring.PriceChangeHandler = ShowPrice;
 
-            exchangeMonitoring.Start();
+            //exchangeMonitoring.Start();
+
+            Test test = new Test();
+
+            test.NumberChange = new(test.Method);
+
+            test.NumberChange += test.Method1;
+
+            test.NumberChange += test.Method2;
+
+            test.Start();
+
+
+            //Console.WriteLine(test.Start());
 
         }
 
