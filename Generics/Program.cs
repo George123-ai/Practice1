@@ -6,13 +6,18 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            int[] intArr = { 1, 2, 3 };
-            double[] doubleArr = { 1.0, 2.0, 3.0 };
-            string[] strArr = { "1", "2", "3" };
+            //int[] intArr = { 1, 2, 3 };
+            //double[] doubleArr = { 1.0, 2.0, 3.0 };
+            //string[] strArr = { "1", "2", "3" };
 
-            DispArr(intArr);
-            DispArr(doubleArr);
-            DispArr(strArr);
+            //DispArr(intArr);
+            //DispArr(doubleArr);
+            //DispArr(strArr);
+
+            GClass<Int32> Gclass = new GClass<Int32>();
+
+            Gclass.GetPropType();
+
 
         }
 
@@ -24,7 +29,7 @@ namespace Generics
             }
             Console.WriteLine();
         }
-
+        
         //static void DispArr(int[] arr)
         //{
         //    foreach (var item in arr)
