@@ -18,9 +18,9 @@
             test.NumberChange += test.Method1;
 
             test.NumberChange += test.Method2;
-
+            
             test.Start();
-
+            
 
             //Console.WriteLine(test.Start());
 
