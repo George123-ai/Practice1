@@ -8,16 +8,18 @@ namespace Generics
         {
             //Console.Write("Input something: ");
 
-            int varN = 34;
-            bool VarI = false;
+            var var1 = "fdsfdsf";
+            bool checkV1 = false;
+            var var2 = "fdsfds";
+            bool checkV2 = false;
 
 
-            Check<int> check1 = new Check<int>();
+            Check<string> check1 = new Check<string>();
 
             check1.checkStr = new(check1.Meth1);
-            check1.checkStr += check1.Meth2;
+            check1.checkStr += check1.Meth3;
 
-            check1.Start(ref varN, ref VarI);
+            check1.Start(ref var1, ref checkV1,ref var2,ref checkV2);
             //int[] intArr = { 1, 2, 3 };
             //double[] doubleArr = { 1.0, 2.0, 3.0 };
             //string[] strArr = { "1", "2", "3" };
