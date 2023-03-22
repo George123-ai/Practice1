@@ -12,7 +12,7 @@ namespace Delegates
 
         public PriceChange PriceChangeHandler { get; set; }
 
-        public void Start()
+        public void Start() 
         {
             while (true)
             {
@@ -20,7 +20,7 @@ namespace Delegates
 
                 PriceChangeHandler(bankOfRussiaPrice);
 
-                Thread.Sleep(2000);
+                Thread.Sleep(200000);
             }
         }
     }

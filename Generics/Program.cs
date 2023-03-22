@@ -6,6 +6,18 @@ namespace Generics
     {
         static void Main(string[] args)
         {
+            //Console.Write("Input something: ");
+
+            int varN = 34;
+            bool VarI = false;
+
+
+            Check<int> check1 = new Check<int>();
+
+            check1.checkStr = new(check1.Meth1);
+            check1.checkStr += check1.Meth2;
+
+            check1.Start(ref varN, ref VarI);
             //int[] intArr = { 1, 2, 3 };
             //double[] doubleArr = { 1.0, 2.0, 3.0 };
             //string[] strArr = { "1", "2", "3" };
@@ -14,9 +26,9 @@ namespace Generics
             //DispArr(doubleArr);
             //DispArr(strArr);
 
-            GClass<Int32> Gclass = new GClass<Int32>();
+            //GClass<Int32> Gclass = new GClass<Int32>();
 
-            Gclass.GetPropType();
+            //Gclass.GetPropType();
 
 
         }
