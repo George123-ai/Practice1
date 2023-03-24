@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryProj", "DeliveryPro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{DC1ACA33-F3EC-4278-AA39-F3A8F90B4196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{69788981-A1D5-410D-A2E6-DE01E47EABB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{69788981-A1D5-410D-A2E6-DE01E47EABB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmBoom", "FilmBoom\FilmBoom.csproj", "{8A0A2F32-2921-4E85-86C6-36FDFCADFB96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson8", "Lesson8\Lesson8.csproj", "{995D773B-6692-42E7-80A2-F1E1B51CFE66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{69788981-A1D5-410D-A2E6-DE01E47EABB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69788981-A1D5-410D-A2E6-DE01E47EABB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69788981-A1D5-410D-A2E6-DE01E47EABB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0A2F32-2921-4E85-86C6-36FDFCADFB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0A2F32-2921-4E85-86C6-36FDFCADFB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0A2F32-2921-4E85-86C6-36FDFCADFB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0A2F32-2921-4E85-86C6-36FDFCADFB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995D773B-6692-42E7-80A2-F1E1B51CFE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995D773B-6692-42E7-80A2-F1E1B51CFE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995D773B-6692-42E7-80A2-F1E1B51CFE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995D773B-6692-42E7-80A2-F1E1B51CFE66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
