@@ -12,6 +12,7 @@
             bool again = true;
             do
             {
+                Console.Clear();
                 Console.Write("Main menu: 1)Movie list. 2)Find movie. 3)Exit. --> ");
                 int choice = int.Parse(Console.ReadLine());
 
@@ -21,7 +22,7 @@
                         {
                             Console.Clear();
                             movie.MovieList();
-                            Console.Write(" (Options) 1)Main menu. 2)Get info about movie. 3)Watch movie 4)Exit --> ");
+                            Console.Write(" (Options) 1)Main menu. 2)Get info about movie. 3)Watch movie--> ");
                             int choice1 = int.Parse(Console.ReadLine());
                             Console.Clear() ;
                             if (choice1 == 1)
@@ -33,13 +34,25 @@
                             {
                                 movie.MovieList();
                                 movie.MovieInfoPrint();
+                                Console.WriteLine();
+                                Console.WriteLine("Press any key to go to main menu...");
+                                Console.ReadKey();
                             }
-                            else if (choice == 4)
-                            {
-                                again = false;
-                                return;
-                                //Environment.Exit(0);
-                            }
+                            
+                            break;
+                        }
+                        case 2:
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Find movie func is not ready yet...");
+                            Console.WriteLine();
+                            Console.WriteLine("Press any key to go to main menu...");
+                            Console.ReadKey();
+                            break;
+                        }
+                        case 3:
+                        {
+                            again= false;
                             break;
                         }
                 }
