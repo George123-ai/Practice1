@@ -25,19 +25,33 @@ namespace FilmBoom
 
         public void MovieList()
         {
-            Console.WriteLine($"Available movies: {movie1.Name}\n\t\t  {movie2.Name}");
+            Console.WriteLine($"Available movies: 1.{movie1.Name}\n\t\t  2.{movie2.Name}");
         }
 
-        public void MovieInfoPrint(Movie movie)
+        public void MovieInfoPrint()
         {
+            Console.Write("Choose movie: ");
+            int movieNumber = Convert.ToInt32(Console.ReadLine());
+            switch(movieNumber)
+            {
+                case 1:
+                    {
+                        Console.WriteLine($"Name: {movie1.Name} \nGenre: {movie1.Genre} \nPrice: {movie1.Price} \n\tDescription: {movie1.Description}");
+                        break;
+                    }
+                case 2: 
+                    {
+                        Console.WriteLine($"Name: {movie2.Name} \nGenre: {movie2.Genre} \nPrice: {movie2.Price} \n\tDescription: {movie2.Description}");
+                        break;
+                    }
+            }
             
-            Console.WriteLine($"Name: {movie1.Name} \nGenre: {movie1.Genre} \nPrice: {movie1.Price} \n\tDescription: {movie1.Description}");
         }
-        public enum Movie
-        {
-            Movie1,
-            Movie2,
-            Movie3,
-        }
+        //public enum Movie
+        //{
+        //    Movie1,
+        //    Movie2,
+        //    Movie3,
+        //}
     }
 }

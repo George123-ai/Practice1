@@ -8,6 +8,7 @@
 
             MovieLib movieInfo = new MovieLib();
             movieInfo.MovieList();
+            movieInfo.MovieInfoPrint(); 
 
             
         }
