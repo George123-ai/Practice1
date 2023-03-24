@@ -7,8 +7,7 @@
             //Movies movie = new Movies();
 
             MovieLib movie = new MovieLib();
-            //movieInfo.MovieList();
-            //movieInfo.MovieInfoPrint(); 
+            
             bool again = true;
             do
             {
@@ -57,23 +56,7 @@
                         }
                 }
             } while (again);
-            //Console.Write("Main menu: 1)Movie list. 2)Find movie. 3)Exit. --> ");
-            //int choice = int.Parse(Console.ReadLine()); 
-
-            //switch(choice) 
-            //{
-            //    case 1:
-            //        {
-            //            Console.Clear();
-            //            movie.MovieList();
-            //            Console.WriteLine(" (Where) 1)Main menu. 2)Get info about movie. 3)Watch movie 4)Exit --> ");
-            //            int choice1 = int.Parse(Console.ReadLine());
-            //            if (choice1 == 1) { 
-
-            //            }
-            //            break;
-            //        }
-            //}
+            
 
             
         }
