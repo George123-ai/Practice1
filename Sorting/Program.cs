@@ -104,7 +104,7 @@ namespace Sorting
             {
                 Console.WriteLine(item);
             }
-
+            // comment
             stack.Pop();
             Console.WriteLine();
             foreach (var item in stack)
