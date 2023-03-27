@@ -25,7 +25,7 @@ namespace Sorting
             }
 
             return -1;
-        }
+        } // Binary Search
 
         static int[] BubbleSortArray(int[] arr) // BubbleSort
         {
@@ -79,12 +79,40 @@ namespace Sorting
             {
                 arr[i] = rnd.Next(0, 11);
             }
-            
 
-            PrintArr(arr);
+
+            //PrintArr(arr);
+            //Console.WriteLine();
+
+            //PrintArr(BubbleSortArray(arr));
+
+            Stack<string> stack = new Stack<string>();
+
+            stack.Push("Bruce");
+            stack.Push("Peter");
+            stack.Push("Mike");
+
+            //for (int i = 0; i < stack.Count; i++)
+            //{
+            //    Console.WriteLine(stack[i]);
+            //}
+            Console.WriteLine(stack.Peek());
+            Console.WriteLine($"if Georgy in stack : {stack.Contains("Georgy")}");
+
+
+            foreach (var item in stack)
+            {
+                Console.WriteLine(item);
+            }
+
+            stack.Pop();
             Console.WriteLine();
-            
-            PrintArr(BubbleSortArray(arr));
+            foreach (var item in stack)
+            {
+                Console.WriteLine(item);
+            }
+
+
         }
     }
 }
