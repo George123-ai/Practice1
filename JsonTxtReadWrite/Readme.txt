@@ -1,1 +1,1 @@
-Create your own ".txt" file and change the path.
+Create your own ".txt" or ".json" files and change their path.
