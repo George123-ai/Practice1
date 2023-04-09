@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson9", "Lesson9\Lesson9.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonTxtReadWrite", "JsonTxtReadWrite\JsonTxtReadWrite.csproj", "{C772BAE2-B25F-4F05-ACE9-2C6BB4F5D248}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructuresAlgorithms", "Sorting\DataStructuresAlgorithms.csproj", "{F2585FFF-197A-48C9-8CDA-0137A47C5EE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures_Algorithms", "DataStructures_Algorithms\DataStructures_Algorithms.csproj", "{3F087204-510C-4156-B61F-A2151E34EC2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +77,10 @@ Global
 		{C772BAE2-B25F-4F05-ACE9-2C6BB4F5D248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C772BAE2-B25F-4F05-ACE9-2C6BB4F5D248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C772BAE2-B25F-4F05-ACE9-2C6BB4F5D248}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2585FFF-197A-48C9-8CDA-0137A47C5EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2585FFF-197A-48C9-8CDA-0137A47C5EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2585FFF-197A-48C9-8CDA-0137A47C5EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2585FFF-197A-48C9-8CDA-0137A47C5EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F087204-510C-4156-B61F-A2151E34EC2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F087204-510C-4156-B61F-A2151E34EC2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F087204-510C-4156-B61F-A2151E34EC2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F087204-510C-4156-B61F-A2151E34EC2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
