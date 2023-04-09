@@ -4,7 +4,7 @@ namespace DataStructures
 {
     internal class Program
     {
-        
+        //-----7
         static int interpolationSearch(int[] array, int value)
         {
             int high = array.Length - 1;
