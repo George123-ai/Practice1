@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
 
-namespace Sorting
+namespace DataStructures
 {
     internal class Program
     {
-        //------------------------------------
+        
         static int interpolationSearch(int[] array, int value)
         {
             int high = array.Length - 1;
