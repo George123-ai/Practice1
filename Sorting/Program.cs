@@ -14,7 +14,7 @@ namespace Sorting
                 int test = low + (high - low) * (value - array[low]) /
                     (array[high] - array[low]);
 
-                Console.WriteLine($"Test: " + test);
+                //Console.WriteLine($"Test: " + test);
 
                 if (array[test] == value)
                     return test;
@@ -26,7 +26,7 @@ namespace Sorting
             }
 
             return -1;
-        }
+        } // Interpolation search
 
         static int LinearSearch(int[] array, int value)
         {
