@@ -4,6 +4,30 @@ namespace Sorting
 {
     internal class Program
     {
+        static int interpolationSearch(int[] array, int value)
+        {
+            int high = array.Length - 1;
+            int low = 0;
+
+            while (value >= array[low] && value <= array[high] && low <= high)
+            {
+                int test = low + (high - low) * (value - array[low]) /
+                    (array[high] - array[low]);
+
+                Console.WriteLine($"Test: " + test);
+
+                if (array[test] == value)
+                    return test;
+                else if (array[test] < value)
+                    low = test + 1;
+                else
+                    high = test - 1;
+
+            }
+
+            return -1;
+        }
+
         static int LinearSearch(int[] array, int value)
         {
             for (int i = 0; i < array.Length; i++)
@@ -14,7 +38,7 @@ namespace Sorting
                 }
             }
             return -1;
-        }
+        } // linear search
 
         static int BinarySearch(int[] array , int target)
         {
@@ -69,13 +93,22 @@ namespace Sorting
 
         static void Main(string[] args)
         {
-            int[] array = { 9, 1, 8, 2, 7, 3, 6, 4, 5 };
-            int index = LinearSearch(array,11);
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int index = interpolationSearch(array, 1);
 
-            if(index != -1)
+            if (index != -1)
+            {
                 Console.WriteLine($"Element found at index: {index}");
+            }
             else
                 Console.WriteLine("Element not found!");
+            //int[] array = { 9, 1, 8, 2, 7, 3, 6, 4, 5 };
+            //int index = LinearSearch(array,11);
+
+            //if(index != -1)
+            //    Console.WriteLine($"Element found at index: {index}");
+            //else
+            //    Console.WriteLine("Element not found!");
 
 
             //Console.WriteLine("Hello, World!");
