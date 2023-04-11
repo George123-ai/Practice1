@@ -5,7 +5,8 @@ namespace DataStructures
 {
     internal class Program
     {
-        static void InserionSort(int[] arr) // Insertion sort
+        //---------------------------------
+        static void InserionSort(int[] arr) // Insertion sort Quadratic time O(n^2),large data set = BAD,
         {
             for (int i = 1; i < arr.Length; i++)
             {
@@ -21,7 +22,7 @@ namespace DataStructures
             }
         }
 
-        static void SelectionSort(int[] arr) // Selection sort
+        static void SelectionSort(int[] arr) // Selection sort Quadratic time O(n^2), large data set = BAD
         {
             for (int i = 0; i < arr.Length - 1; i++)
             {
@@ -96,7 +97,7 @@ namespace DataStructures
             return -1;
         } // Binary Search
 
-        static int[] BubbleSortArray(int[] arr) // BubbleSort
+        static int[] BubbleSortArray(int[] arr) // BubbleSort Quadratic time O(n^2), large data set = BAD
         {
             //int[] result = new int[arr.Length];
             for (int i = 0; i < arr.Length; i++)
