@@ -1,9 +1,26 @@
-﻿using System.Diagnostics;
+﻿using System.ComponentModel.Design;
+using System.Diagnostics;
 
 namespace DataStructures
 {
     internal class Program
     {
+
+        static void SelectionSort(int[] arr) // Selection sort
+        {
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                int min = i;
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (arr[min] > arr[j])
+                        min = j;
+                }
+                int temp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = temp;
+            }
+        }
         
         static int interpolationSearch(int[] array, int value)
         {
@@ -94,15 +111,20 @@ namespace DataStructures
 
         static void Main(string[] args)
         {
-            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            int index = interpolationSearch(array, 1);
+            int[] array = { 8, 9, 7, 2, 3, 1, 5, 4, 6 };
 
-            if (index != -1)
-            {
-                Console.WriteLine($"Element found at index: {index}");
-            }
-            else
-                Console.WriteLine("Element not found!");
+            SelectionSort(array);
+
+            PrintArr(array);
+            //int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //int index = interpolationSearch(array, 1);
+
+            //if (index != -1)
+            //{
+            //    Console.WriteLine($"Element found at index: {index}");
+            //}
+            //else
+            //    Console.WriteLine("Element not found!");
             //int[] array = { 9, 1, 8, 2, 7, 3, 6, 4, 5 };
             //int index = LinearSearch(array,11);
 
